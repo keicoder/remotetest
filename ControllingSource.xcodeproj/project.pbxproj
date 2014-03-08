@@ -140,9 +140,9 @@
 			children = (
 				55E52A5C17B9B15800088960 /* AppDelegate.h */,
 				55E52A5D17B9B15800088960 /* AppDelegate.m */,
+				55E52A8A17B9B17400088960 /* View Controllers */,
 				5568C19E17B9B97C00A86A87 /* Core Data */,
 				55E52A8917B9B16D00088960 /* Resources */,
-				55E52A8A17B9B17400088960 /* View Controllers */,
 				55E52A5417B9B15800088960 /* Supporting Files */,
 			);
 			path = ControllingSource;

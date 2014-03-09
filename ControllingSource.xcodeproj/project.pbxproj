@@ -140,6 +140,8 @@
 			children = (
 				55E52A5C17B9B15800088960 /* AppDelegate.h */,
 				55E52A5D17B9B15800088960 /* AppDelegate.m */,
+				55E52A5F17B9B15800088960 /* Main.storyboard */,
+				55E52A6217B9B15800088960 /* ControllingSource.xcdatamodeld */,
 				55E52A8A17B9B17400088960 /* View Controllers */,
 				5568C19E17B9B97C00A86A87 /* Core Data */,
 				55E52A8917B9B16D00088960 /* Resources */,
@@ -180,9 +182,7 @@
 		55E52A8917B9B16D00088960 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				55E52A6217B9B15800088960 /* ControllingSource.xcdatamodeld */,
 				55E52A6B17B9B15800088960 /* Images.xcassets */,
-				55E52A5F17B9B15800088960 /* Main.storyboard */,
 				5568C19F17B9D5C200A86A87 /* QuotesList.plist */,
 				55E52A8B17B9B35F00088960 /* README.md */,
 			);

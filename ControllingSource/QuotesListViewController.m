@@ -84,7 +84,7 @@
 {
     NSManagedObjectContext *context = [self.fetchedResultsController managedObjectContext];
     NSEntityDescription *entity = [[self.fetchedResultsController fetchRequest] entity];
-    [NSEntityDescription insertNewObjectForEntityForName:[entity name] inManagedObjectContext:context];
+    [NSEntityDescription insertNewObjectForEntityForName:[entity name] inManagedObjectContext:context]; //name: returns the entity name of the receiver.
     
     NSError *error = nil;
     

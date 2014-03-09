@@ -13,7 +13,7 @@
 @dynamic famousQuote;
 @dynamic personName;
 
-- (void)awakeFromInsert
+- (void)awakeFromInsert //invoked automatically by the Core Data framework when the receiver is first inserted into a managed object context.
 {
     [super awakeFromInsert];
     
@@ -21,10 +21,14 @@
                                 pathForResource:@"QuotesList"
                                 ofType:@"plist"];
     
-    NSArray *quotesArray =
-    [NSArray arrayWithContentsOfFile:quotesFilePath];
-    NSUInteger quoteIndex = arc4random() % [quotesArray count];
+    
+    NSArray *quotesArray = [NSArray arrayWithContentsOfFile:quotesFilePath];
+    NSLog (@"quotesArray: %@", quotesArray);
+    
+    NSUInteger quoteIndex = arc4random() % [quotesArray count]; //random number
     NSDictionary *quoteDictionary = quotesArray[quoteIndex];
+    NSLog (@"quoteDictionary: %@", quoteDictionary);
+    
     
     [self setPrimitiveValue:quoteDictionary[@"personName"]
                      forKey:@"personName"];
